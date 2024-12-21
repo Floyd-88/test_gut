@@ -1,0 +1,37 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt generate",
+    "build-and-pack": "date=$(date '+%H-%M_%d.%m') && nuxt generate --dotenv .env.prod && zip -r ./builds/PROD-$date.zip ./dist && npm run build:stage && zip -r ./builds/TEST-$date.zip ./dist",
+    "build:prod": "date=$(date '+%H-%M_%d.%m') && nuxt generate --dotenv .env.prod && zip -r ./builds/PROD-$date.zip ./dist",
+    "build:stage": "date=$(date '+%H-%M_%d.%m') && nuxt generate --dotenv .env.stage && zip -r ./builds/PROD-$date.zip ./dist",
+    "dev": "nuxt dev",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview",
+    "update": "npm i -g npm-check-updates && ncu --interactive --format group"
+  },
+  "devDependencies": {
+    "@types/postcss-pxtorem": "^6.1.0",
+    "less": "^4.2.0",
+    "nuxt": "^3.13.2",
+    "nuxt-viewport": "^2.2.0",
+    "nuxt-vite-legacy": "^1.2.0",
+    "postcss": "^8.4.47",
+    "postcss-pxtorem": "^6.1.0",
+    "terser": "^5.34.1",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.5",
+    "animated-scroll-to": "^2.3.0",
+    "gsap": "file:libs/gsap-bonus.tgz",
+    "nuxt-swiper": "^1.2.2",
+    "pinia": "^2.2.4"
+  },
+  "volta": {
+    "node": "22.9.0"
+  }
+}
