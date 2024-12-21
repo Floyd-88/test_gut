@@ -4,7 +4,7 @@
 
 <template>
   <main>
-
+  <AppAbout/>
   </main>
 </template>
 
