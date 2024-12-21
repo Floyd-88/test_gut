@@ -31,7 +31,7 @@ const handlerClickLink = (block) => {
         <ul class="header__menu">
           <li class="header__item"><NuxtLink  to="/">Home</NuxtLink ></li>
           <li class="header__item"><NuxtLink  to="/about">About</NuxtLink ></li>
-          <li class="header__item">contacts</li>
+          <li class="header__item"><NuxtLink  to="/contacts">Contacts</NuxtLink ></li>
           <li class="header__item">gallery</li>
 
         </ul>
