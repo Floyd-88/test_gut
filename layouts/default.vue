@@ -61,9 +61,18 @@ onMounted(() => {
 <template>
   <div class="smooth-wrapper">
     <div id="smooth-content">
-      <AppHeader />
-      <slot />
-      <AppFooter />
+      <div class="wrap">
+        <AppHeader />
+        <slot />
+        <AppFooter />
+      </div>
     </div>
   </div>
 </template>
+<style>
+.wrap {
+  display: flex;
+flex-direction: column;
+height: 100vh;
+}
+</style>
