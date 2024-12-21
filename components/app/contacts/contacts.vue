@@ -23,6 +23,7 @@ const handlerClickLink = (block) => {
 
 <template>
  <div>Contacts</div>
+  <a href="#">link</a>
 </template>
 
 <style lang="less" src="./contacts.less" />
