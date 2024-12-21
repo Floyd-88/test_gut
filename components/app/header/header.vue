@@ -29,7 +29,7 @@ const handlerClickLink = (block) => {
         </div>
 
         <ul class="header__menu">
-          <li class="header__item">home</li>
+          <li class="header__item"><a href="/">home</a></li>
           <li class="header__item">about</li>
           <li class="header__item">contacts</li>
           <li class="header__item">gallery</li>
