@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  max-width: 1440px;
+  height: 44px;
+  margin: 0 auto;
+  color: white;
+}
+.header__container {
+  max-width: 1440px;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  color: white;
+  margin-right: 100px;
+}
+.header__menu {
+  display: flex;
+  gap: 20px;
+}
+.header__item {
+  cursor: pointer;
+}
+/*# sourceMappingURL=header.css.map */
