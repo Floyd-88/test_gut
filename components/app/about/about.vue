@@ -22,21 +22,7 @@ const handlerClickLink = (block) => {
 </script>
 
 <template>
-  <header class="header">
-      <div class="container header__container">
-        <div class="header__logo">
-          LOGO
-        </div>
-
-        <ul class="header__menu">
-          <li class="header__item"><NuxtLink  to="/">Home</NuxtLink ></li>
-          <li class="header__item"><NuxtLink  to="/about">About</NuxtLink ></li>
-          <li class="header__item">contacts</li>
-          <li class="header__item">gallery</li>
-
-        </ul>
-      </div>
-  </header>
+ <div>About</div>
 </template>
 
-<style lang="less" src="./header.less" />
+<style lang="less" src="./about.less" />
